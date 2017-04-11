@@ -1,8 +1,18 @@
 var userInput = prompt("Enter a sentance!");
 
-var capitalize = function(input) {
-  return input.toLowerCase().replace(/\b\w|\w\b/g, function(match) {
-    return match.toUpperCase();
-  });
+var capitalizeInput = function(input) {
+  var newString = input.substr(0,1) + input.substr(-1,1);
+  return newString.toUpperCase();
 };
-alert(capitalize(userInput));
+
+var capitalizedInput = capitalizeInput(userInput);
+
+var reverseCapitalized = function(input) {
+  var newString = input.charAt(1) + input.charAt(0);
+  return newString;
+};
+
+var reversedInput = reverseCapitalized(capitalizedInput);
+
+alert(capitalizedInput);
+alert(reversedInput);
