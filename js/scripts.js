@@ -14,9 +14,10 @@ var reverseCapitalized = function(input) {
 
 var reversedInput = reverseCapitalized(capitalizedInput);
 
-var capitalizeAndReverse = function(capitalize, reverse) {
+var capitalizeAndReverse = function(capitalize, reverse, input) {
   alert(capitalize);
   alert(reverse);
+  alert(input + reverse);
 };
 
-capitalizeAndReverse(capitalizedInput,reversedInput);
+capitalizeAndReverse(capitalizedInput,reversedInput, userInput);
