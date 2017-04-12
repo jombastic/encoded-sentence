@@ -5,25 +5,19 @@ var capitalizeInput = function(input) {
   return newString.toUpperCase();
 };
 
-var capitalizedInput = capitalizeInput(userInput);
-
 var reverseCapitalized = function(input) {
   var newString = input.charAt(1) + input.charAt(0);
   return newString;
 };
 
-var reversedInput = reverseCapitalized(capitalizedInput);
-
-var capitalizeAndReverse = function(capitalize, reverse, input) {
-  alert(capitalize);
-  alert(reverse);
-  alert(input + reverse);
-  return input + reverse;
+var capitalizeAndReverse = function(input) {
+  alert(capitalizeInput(userInput));
+  alert(reverseCapitalized(capitalizeInput(userInput)));
+  alert(input + reverseCapitalized(capitalizeInput(userInput)));
+  return input + reverseCapitalized(capitalizeInput(userInput));
 };
 
-var capitalizedAndReversed = capitalizeAndReverse(capitalizedInput,reversedInput, userInput);
-
-capitalizedAndReversed;
+var capitalizedAndReversed = capitalizeAndReverse(userInput);
 
 var countAndConcatenate = function(input, string) {
   var letter = input.length / 2;
@@ -33,3 +27,4 @@ var countAndConcatenate = function(input, string) {
 var countedAndConcatenated = countAndConcatenate(userInput, capitalizedAndReversed);
 
 alert(countedAndConcatenated);
+alert(countedAndConcatenated.split("").reverse().join(""));
