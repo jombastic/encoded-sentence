@@ -18,6 +18,18 @@ var capitalizeAndReverse = function(capitalize, reverse, input) {
   alert(capitalize);
   alert(reverse);
   alert(input + reverse);
+  return input + reverse;
 };
 
-capitalizeAndReverse(capitalizedInput,reversedInput, userInput);
+var capitalizedAndReversed = capitalizeAndReverse(capitalizedInput,reversedInput, userInput);
+
+capitalizedAndReversed;
+
+var countAndConcatenate = function(input, string) {
+  var letter = input.length / 2;
+  return string.charAt(letter) + string;
+};
+
+var countedAndConcatenated = countAndConcatenate(userInput, capitalizedAndReversed);
+
+alert(countedAndConcatenated);
