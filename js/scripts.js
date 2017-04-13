@@ -11,20 +11,29 @@ var reverseCapitalized = function(input) {
 };
 
 var capitalizeAndReverse = function(input) {
-  alert(capitalizeInput(userInput));
-  alert(reverseCapitalized(capitalizeInput(userInput)));
-  alert(input + reverseCapitalized(capitalizeInput(userInput)));
+  //alert(capitalizeInput(userInput));
+  //alert(reverseCapitalized(capitalizeInput(userInput)));
+  //alert(input + reverseCapitalized(capitalizeInput(userInput)));
   return input + reverseCapitalized(capitalizeInput(userInput));
 };
 
-var capitalizedAndReversed = capitalizeAndReverse(userInput);
+//var capitalizedAndReversed = capitalizeAndReverse(userInput);
 
 var countAndConcatenate = function(input, string) {
   var letter = input.length / 2;
   return string.charAt(letter) + string;
 };
 
-var countedAndConcatenated = countAndConcatenate(userInput, capitalizedAndReversed);
+//var countedAndConcatenated = countAndConcatenate(userInput, capitalizedAndReversed);
 
-alert(countedAndConcatenated);
-alert(countedAndConcatenated.split("").reverse().join(""));
+//alert(countedAndConcatenated);
+//alert(countedAndConcatenated.split("").reverse().join(""));
+
+$(document).ready(function() {
+  $("#swindler").click(function() {
+    alert(userInput);
+  });
+  $("#upside-swindler").click(function() {
+    alert(countAndConcatenate(userInput, capitalizeAndReverse(userInput)).split("").reverse().join(""));
+  });
+});
