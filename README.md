@@ -6,7 +6,7 @@
 
 ## Description
 
-This website prompts user for a sentence and installs it in the left picture, ready to pop up as an alert message when clicked. The right picture takes the message previously encrypted by functions and calls it also as an alert when clicked. This site is an exercise in JavaScript functions written to call each other. The commented out lines of code were written to test the functions' efficiency.
+This website prompts user for a sentence and installs it in the left picture, ready to pop up as an alert message when clicked. The right picture takes the message previously encrypted by functions and calls it also as an alert when clicked. This site is an [exercise](https://www.learnhowtoprogram.com/intro-to-programming/javascript-and-jquery-c950c9ce-679c-4678-ab1f-11881b766e22/practice-bonus-function-writing) in JavaScript functions written to call each other. The commented out lines of code were written to test the functions' efficiency.
 
 ## Setup
 
